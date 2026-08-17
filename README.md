@@ -3,31 +3,37 @@
 To complete this recitation, follow the instructions in [recitation-03.md](recitation-03.md) ([PDF version](recitation-03.pdf)). Below you'll find important and useful information about submitting your work, using git, and testing your code. 
 
 ## Turning in your work
-- You may work with a partner to complete this recitation.
-- Only one team member needs to push your completed lab to github. 
-- At the top of `recitation-03.md`, **include the names of both** team members.
-- Once you have pushed your final submission to GitHub, go to Canvas and submit a link to your repository to the Canvas assignment for this recitation. 
-  - Submit to Canvas in group with your partner.
+- You may work on the recitations in pairs. Both partners should submit their own completed recitation.
+- Put your name at the top of `main.py` and `answers.md`.
+- Submit your completed recitation files to gradescope.
+  - You only need to submit files you edited to complete this assignment.
 
-## Using Git 
+## Running and testing your code
+- You can run the tests using `pytest`. If you need to, install `pytest`. On your terminal:
+  + `$ pip3 install pytest`
+  + You may also have to install other python modules such as `tabulate` or other imported modules as you work through these recitations.
+- It's usually best to run only one test at a time. To run tests, on a terminal, navigate into the directory holding your source, then execute:
+  + `$ pytest main.py` to run all tests
+  + `$ pytest main.py::test_one` to run `test_one`
+  + If your computer can't find pytest after you've installed it, you can run pytest as follows:
+    + `$ python -m pytest main.py`
+    + `$ python -m pytest main.py::test_one`
+  + Gradescope will test your implementation using the same `pytest`s that are written in `test_main`.
+
+## Using Git
+We **strongly** recommend using git for all recitations and assignments for this course.
+
+To use git:
 - [Clone] your Recitation repository to your local device.
-- As you complete this lab, `add`, `commit`, and `push` your work up to GitHub. 
-  - You will need to issue `git add` for all files that you have modified, e.g., `recitation-03.md`, and any others that you modify or add to the repository as well.
-  - For example, on the command line, in the same directory as your cloned lab:
-    ```
-    $ git add recitation-03.md
-    $ git commit -m "Solve all Recurrences"
-    $ git push origin main
-    ```
-  - It is recommended that you `add`, `commit`, and `push` your work often in order to regularly save your work to GitHub. The latest version of your work will be what is graded.
+- As you complete your work, `add`, `commit`, and `push` your changes to GitHub.
+  + You can do this through your IDE, or if you're old school, through the terminal.
+  + We recommend that you `add`, `commit`, and `push` your work often in order to regularly save your work to GitHub (this is a remote backup!).
 
 ## About Markdown
 
-We use Markdown extensively in these recitations. Markdown is a great way to easily add formatting to simple text documents.
+We use Markdown extensively in these recitations. Here is a [cheatsheet] for markdown syntax.
 
-Here is a [cheatsheet] for markdown syntax.
-
-You will notice in the recitation documents that you can format mathematical expressions in markdown. To do so, wrap them in dollar signs. You can use [latex syntax] within the dollar signs. 
+You can format mathematical expressions in markdown. To do so, wrap them in dollar signs and use [latex syntax] within the dollar signs. 
 
 For example, the run time of our first example, linear search, this semester is $c_1n + c_2n + c_4 \in O(n)$. 
 
@@ -41,7 +47,7 @@ It's easy to do powers too. Euler's identity states: $e^{ix} + 1 = 0$
 
 Pretty cool, huh?
 
-You can also convert from markdown to pdf. `convert.sh` is provided for you to convert your `answers.md` to `answers.pdf`. As the comment in the script says, you will need to install pandoc and latex, but its pretty convenient to be able to do so. You do not need to submit you answers in PDF format, but you may if you like.
+You can convert from markdown to pdf. `convert.sh` is provided for you to convert your `answers.md` to `answers.pdf`. As the comment in the script says, you will need to install pandoc and latex, but its worth it! You do not need to submit your answers in PDF format, but you may if you like.
 
 [Clone]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
 [cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

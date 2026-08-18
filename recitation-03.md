@@ -1,7 +1,7 @@
 # CMPS 2200  Recitation 03
 
-**Name (Team Member 1):**_________________________  
-**Name (Team Member 2):**_________________________
+**Name**_________________________  
+
 
 In this recitation, we will investigate recurrences for work and span of algorithms. Unlike other recitations, you may add your answers directly to this document. You do not need to use an `answers.md`.
 
@@ -49,7 +49,7 @@ Solve the following recurrences using the brick method. First argue
 whether they are root-dominated, leaf-dominated, or balanced. Then,
 state the resulting asymptotic bound for $W(n)$.
 
-a) $W(n) = 2 W(0.49 n) + 1.01 n$
+d) $W(n) = 2 W(0.49 n) + 1.01 n$
 .  
 .  
 .  
@@ -60,7 +60,7 @@ a) $W(n) = 2 W(0.49 n) + 1.01 n$
 .  
 .  
 
-b) $W(n) = W(n/2) + W(n/4) + 0.999n$
+e) $W(n) = W(n/2) + W(n/4) + 0.999n$
 .  
 .  
 .  
@@ -76,7 +76,7 @@ b) $W(n) = W(n/2) + W(n/4) + 0.999n$
 
 Solve the following recurrence.
 
-a) $W(n) = \sqrt{n}W(\sqrt{n}) + \sqrt{n}$
+f) $W(n) = \sqrt{n}W(\sqrt{n}) + \sqrt{n}$
 .  
 .  
 .  
